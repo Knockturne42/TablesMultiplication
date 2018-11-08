@@ -5,7 +5,7 @@
 	include 'head.php';
 	include 'form.php';
 	echo "<div id='tableDone'>";
-	for ($i=1; $i < 11; $i++) { 
+	for ($i=0; $i < 31; $i++) { 
 		echo ("<div class='tableNum'>".$num." * ".$i." = ".$num*$i."</div>");
 	}
 	echo "</div>";
