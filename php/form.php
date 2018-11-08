@@ -11,6 +11,7 @@
 	<option value="10">table de 10</option>
 </select>
 
-<form action="test.php" method="POST" id="myForm">
-	<input type="submit" value="submit">
+<form action="calc.php" method="POST" id="myForm">
+	<p>Choisir la table a afficher</p>
+	<input type="submit" value="Voir">
 </form>

@@ -4,7 +4,9 @@
 	$num = intval($_POST['tableChoice']);
 	include 'head.php';
 	include 'form.php';
-	echo "<div id='tableDone'>";
+	echo "</main>";
+	echo "<div class='tableDone'>";
+	echo "<h2>Table de ".$num."</h2>";
 	for ($i=0; $i < 31; $i++) { 
 		echo ("<div class='tableNum'>".$num." * ".$i." = ".$num*$i."</div>");
 	}
