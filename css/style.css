@@ -10,7 +10,6 @@ html {
 
 body {
 	width: 100%;
-	height: 100%;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -29,11 +28,11 @@ header {
 
 main {
 	width: 80%;
-	height: 20%;
 	margin: 0 10%;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	justify-content: space-around;
 	background-color: rgba(255, 255, 255, 0.8);
 	box-shadow: 5px 5px 20px black;
 	position: relative;
@@ -50,6 +49,7 @@ form {
 	align-items: center;
 	margin-right: 10%;
 	font-size: 3vw;
+	padding-bottom: 15%;
 }
 
 form p {
@@ -57,13 +57,13 @@ form p {
 }
 
 select {
-	width: 98%;
-	height: 48%;
-	margin: 1%;
-	font-size: 4vw;
 	background-color: rgba(255, 255, 255, 0.8);
-	padding-left: 8%;
+	font-size: 7vw;
 	border-radius: 25px;
+}
+
+option {
+	font-size: 2vw;
 }
 
 input {
@@ -87,4 +87,5 @@ input {
 	border: 2px solid rgba(200, 200, 200, 0.8);
 	background-color: rgba(0, 0, 0, 0.8);
 	color: white;
+	margin-bottom: 15%;
 }
