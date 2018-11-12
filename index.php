@@ -1,4 +1,5 @@
 <?php
+	SESSION_START();
 	include 'php/head.php';
 	include 'php/form.php';
 	include 'php/calc2.php';

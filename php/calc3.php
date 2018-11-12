@@ -1,11 +1,8 @@
 <?php
-	session_start();
-	$_SESSION['1'] = $val;
-	$_SESSION['2'] = $ordi;
 	if (isset($_GET['tabUser'])) {
-		$val = intval($_GET['tabUser']);
-		$ordi = rand(0, 30);
-		echo "<p>Calcul a resoudre: ".$val." * ".$ordi."</p>";
+		$_SESSION['val'] = intval($_GET['tabUser']);
+		$_SESSION['ordi'] = rand(0, 30);
+		echo "<p>Calcul a resoudre: ".$_SESSION['val']." * ".$_SESSION['ordi']."</p>";
 	}
 	echo '<form action="#" method="get" id="repInterro">';
 	echo '<label for="userValue">Votre reponse</label>';
@@ -16,9 +13,8 @@
 	echo '</form>';
 	if (isset($_GET['userValue']))
 	{
-		echo "nwfifwehpfjwef powj fpw".$_SESSION['1'];
 		$val2 = $_GET['userValue'];
-		$rep = $val * $ordi;
+		$rep = $_SESSION['val'] * $_SESSION['ordi'];
 		if ($rep == $val2)
 			echo "<p>Bonne reponse bien joue: ".$val2."</p>";
 		else
